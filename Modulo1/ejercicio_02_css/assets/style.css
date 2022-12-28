@@ -1,0 +1,49 @@
+
+/*TAREA
+-modificar el menu superior para cambiar los span por li´s
+-dar colores a diferentes secciones de la pagina
+-dar color de fondo a los elementos del formulario (input y text areas)
+-eliminar subrayado de los enlaces (text-decoration: none;) */
+
+#menu_navegacion{
+    color: red;
+    text-align: center;
+    
+}
+
+.enlace-menu {
+    text-decoration: none;
+}
+
+
+#menu_navegacion span {
+
+    display: inline-block;
+    width: 30rem;
+    height: 3rem;
+    background-color: #F8FFBB;
+    border-radius: 5rem;
+}
+/* con el comando hover hacemos relacion a la accion de posicionar el mouse encima*/
+#menu_navegacion span:hover{
+    background-color: #EFFC7D ;
+}
+
+/* se puede asignar una clase en el documento html y citarlo para darle formato con la siguiente formula*/
+.enlace-menu{
+
+    font-size: 2rem;
+    font-style: italic;
+}
+/* tambien se puede citar un id especifico con el caracter #*/
+#tabla_comidas{
+    color: red;
+}
+/* al colocar una etiqueta se puede otorgar la propiedad a todas #*/
+li{
+    background-color: aquamarine;
+}
+
+#presentacion{
+    font-family: 'Roboto Mono', monospace;
+}

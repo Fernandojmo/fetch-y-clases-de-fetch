@@ -1,0 +1,50 @@
+/* Sistema de cajas FLEX de CSS */
+.contenedor {
+    background-color: blanchedalmond;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    /*justify-content: start;
+        justify-content: end;
+        justify-content: space-between;
+        justify-content: space-arround;
+        justify-content: space-evenly;
+        
+        justify content sirve para alinear los elementos en el eje principal*/
+        /*align-items: ;
+        align-item sirve para alinear los elementos en el eje cruzado
+        */
+}
+
+/*Sistema de cajas GRID de CSS*/
+.contenedor2{
+    display:grid;
+    gap: 10px;/* gap le da un margen simetrico de 10px en este caso entre cajas, a diferencia de margin, que da una distancia de 10px mas 10px entre cajas (se cuenta del centro al borde de la caja)*/
+    padding: 30px;
+    /* grid-template-columns: 1fr 1fr 1fr 1fr;  */ /*esto crea un grid de 4 columnas*/
+    /* grid-template-columns: repeat(3, 30fr); */ /* esto repite los fr de un grid para crear varias columnas a la vez*/
+    /*grid-template-rows: 3fr 1fr 1fr 10fr 5fr; */ /*esto crea un grid que tiene 5 filas*/
+    /*grid-template-row: auto; */
+
+    /*Para esta forma de organizar (Grid Template Area) las areas de un grid, se requiere dar id a los <div> i luego crear en css el formato #id asignandole el codigo de con grid-area: a; como se muestran en el arreglo a continuacion*/
+    grid-template-areas: 
+        "a a a"
+        "b c c"
+        "d c c"
+        "e f g"
+        "e h h"
+        "i i j"
+    ;
+}
+
+#caja1{
+    grid-area: a;
+}
+
+.caja {
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+}

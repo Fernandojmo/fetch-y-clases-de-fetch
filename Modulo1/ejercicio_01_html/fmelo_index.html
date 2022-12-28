@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fmelo_index.html</title>
+    </head>
+    <body>
+        <header>
+            <h1>Fernando Melo Olivares</h1>
+            <nav id="menu_navegacion">
+                <span><a href="#presentacion">Presentación personal</a></span>
+                <span><a href="#frm_contacto">Formulario de contacto</a></span>
+                <span><a href="#otra_info">Otra información</a></span>
+                <p> </p> <!-- espacio en blanco para separar imagen-->
+            </nav>
+        </header>
+        <main>
+            <div id="presentacion">
+                <img src="/assets/images/fernando.jpg" width="500" height="500" alt="imagen_de_fernando">
+                <p>Edad: 28 años</p>
+                <p>Hobbies: Computación, video juegos, juegos de mesa, deporte, lectura ligera y beber mate.</p> 
+                <p>Hola! Soy Fernando y actualmente me encuentro cursando el bootcamp de desarrollo web full stack, en donde estoy aprendiendo distintas herramientas de programación como HTML, CSS, JavaScript entre otras, actualmente me encuentro viviendo en la ciudad de curicó, mi principal hobbie son los juegos de mesa, en donde participo en un club de juegos finalmentem hacer deporte al aire libre. </p>     
+                <h4>Lo que espero lograr</h4>
+                <ol>    
+                    <li>
+                        <p>Desarrollar páginas web</p>    
+                    </li>
+                    <li>
+                        <p>Desarrollar aplicaciones web</p>
+                    </li>
+                    <li>
+                        <p>Manejar lenguajes de programación HTML, CSS, JavaScript</p>
+                    </li>
+                    <li>
+                        <p></p>
+                    </li>
+                </ol>
+            </div>
+            <div id="frm_contacto">
+                <h2>Formulario de contacto</h2> 
+                <p>Si estas aqui es porque deseas contactarte conmigo, porfavor rellena y envía el formulario.</p>
+                <form action="frm_contacto">
+                    <p>
+                       <label for="nombre_frm_contacto">Nombre</label>
+                       <input type="text" id="nombre_frm_contacto" required>  
+                    </p>
+                    <p>
+                        <label for="telefono_frm_contacto">Telefono</label>
+                        <input type="number" id="telefono_frm_contacto" required>
+                    </p>
+                    <p>
+                        <label for="pais">Pais</label>
+                        <select name="pais" id="pais" required>
+                            <option value="ch">Chile</option>
+                            <option value="pe">Peru</option>
+                            <option value="bo">Bolivia</option>
+                            <option value="ec">Ecuador</option>
+                            <option value="ar">Argentina</option>
+                            <option value="col">Colombia</option>
+                            <option value="mx">Mexico</option>
+                            <option value="es">España</option>   
+                        </select>
+                        
+                    </p>
+                    <p>
+                        <label for="ciudad_frm_contacto">Ciudad</label>
+                        <input type="text" id="ciudad_frm_contacto" required>
+                    </p>
+                    <p>
+                        <label for="Correo_frm_contacto">Correo</label>
+                        <input type="email" id="Correo_frm_contacto" required>
+                    </p>
+                    <p>
+                        <label for="razon_de_contacto[]"> Razon de contacto </label>
+                        <ol>
+                              
+                            <li>
+                                <input type="radio" name="razon_de_contacto[]" id="frm_c" value="c"> Cotizar
+                            </li>
+                            <li>
+                                <input type="radio" name="razon_de_contacto[]" id="frm_co" value="co"> Contratar
+                            </li>
+                            <li>
+                                <input type="radio" name="razon_de_contacto[]" id="frm_ecv" value="ecv"> Enviar CV
+                            </li>
+                            <li>
+                                <input type="radio" name="razon_de_contacto[]" id="frm_st" value="st"> Solicitar trabajo
+                            </li>
+                        </ol>
+                    </p>
+                    <p>
+                        <label for="tipo_de_servicio"> Tipo de servicio </label>
+                        <ul>
+                            <li>
+                                <input type="checkbox" name="tipo_de_servicio" id="frm_ap" value="ap"> Asesoria de proyectos
+                            </li>
+                            <li>
+                                <input type="checkbox" name="tipo_de_servicio" id="frm_pp" value="pp"> Analisis de pre-factibilidad de proyecto
+                            </li>
+                            <li>
+                                <input type="checkbox" name="tipo_de_servicio" id="frm_pc" value="pc"> Evaluación proyecto de contrucción
+                            </li>
+                            <li>
+                                <input type="checkbox" name="tipo_de_servicio" id="frm_pi" value="pi"> Evaluación proyecto de informático
+                            </li>
+                            <li>
+                                <input type="checkbox" name="tipo_de_servicio" id="frm_di" value="di"> Desarrollo proyecto de informático
+                            </li>
+                        </ul>
+                    </p>
+                    <p>
+                        <label>Descripción</label>   
+                    </p>
+                    <p>
+                        <textarea name="descripcion_frm_contacto" id="descripcion_frm_contacto" cols="30" rows="10">Escribe tu descripción.</textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Enviar">
+                    </p>
+                </form>
+            </div>   
+            <div id="otra_info">
+                <h2>Otra información</h2>
+                <h3 id="tabla_comidas">Lista de Comidas</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Nombre</td>
+                            <td>Pais origen</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pizza</td>
+                            <td>Italia</td>
+                        </tr>
+                        <tr>
+                            <td>Pastel de choclo</td>
+                            <td>Chile</td>
+                        </tr>
+                        <tr>
+                            <td>Paella</td>
+                            <td>España</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3 id="descripcion_comidas">Descripción de comidas</h3>
+                <h4>Esto es una paella española</h4>
+                <img src="/assets/images/paella.jpg" alt="paella">
+                <p> La paella es una receta de cocina con base de arroz, con origen en la actual Comunidad Valenciana, hoy en día muy popular en toda España y servida en restaurantes de todo el mundo. En esta receta, el arroz se cocina junto a otros alimentos en una sartén, generalmente ancha y con asas</p>
+                <h4>Esto es un pastel de choclo chileno</h4>
+                <img src="/assets/images/pastel_de_choclo.jpg" alt="pastel_de_choclo">
+                <p>  El pastel de choclo chileno es preparado con una pasta horneada de granos tiernos de choclo, dependiendo del gusto, se le incluye azucar o sal, este es es relleno de pino, osea carne con cebolla</p>
+                <h4>Esto es una Pizza italiana</h4>
+                <img src="/assets/images/pizza.jpg" alt="pizza">
+                <p> La pizza es una preparación culinaria que consiste en un pan plano, habitualmente de forma circular, elaborado con harina de trigo, levadura, agua y sal que tradicionalmente se cubre con salsa de tomate y mozzarella y se hornea a alta temperatura en un horno de leña</p>
+            </div>
+        </main>
+    </body>
+</html>
